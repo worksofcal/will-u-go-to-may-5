@@ -30,6 +30,15 @@
             animation: slideIn 0.5s ease-out;
         }
 
+        .cat-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
         @keyframes slideIn {
             from {
                 opacity: 0;
@@ -120,7 +129,8 @@
     <div class="container">
         <!-- Stage 1: Initial Question -->
         <div id="stage1" class="stage">
-            <div class="question">Will you go to my recognition?</div>
+            <img src="https://media.githubusercontent.com/media/worksofcal/recognition/main/cat.jpg" alt="Cute Cat" class="cat-image">
+            <div class="question">Would you go to my recognition?</div>
             <div class="buttons">
                 <button class="yes-btn" onclick="goToStage2()">Yes</button>
                 <button class="no-btn" onclick="goToStage3()">No</button>
